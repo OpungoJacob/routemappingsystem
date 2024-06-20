@@ -84,7 +84,7 @@ export default function BeforeYouStardActivityModal({
                 <>
                   <Text style={styles.activityTitle}>Activity Title</Text>
                   <TextInput
-                    placeholder="A quick run in the park..."
+                    placeholder="A quick drive to..."
                     onBlur={onBlur}
                     onChangeText={onChange}
                     value={value}
@@ -118,24 +118,7 @@ export default function BeforeYouStardActivityModal({
                 Choose an Activity
               </Text>
               <View style={styles.container}>
-                <View style={[styles.iconWrapper]}>
-                  <View
-                    style={isIconSelected("Running") && styles.iconContainer}
-                  >
-                    <Pressable
-                      onPress={() => {
-                        handleIconPress("Running");
-                        Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-                      }}
-                    >
-                      <MaterialCommunityIcons
-                        name="run"
-                        size={30}
-                        color="black"
-                      />
-                    </Pressable>
-                  </View>
-                </View>
+                
                 <View style={[styles.iconWrapper]}>
                   <View
                     style={isIconSelected("Cycling") && styles.iconContainer}
@@ -147,43 +130,26 @@ export default function BeforeYouStardActivityModal({
                       }}
                     >
                       <MaterialCommunityIcons
-                        name="bike"
+                        name="motorbike"
                         size={30}
                         color="black"
                       />
                     </Pressable>
                   </View>
                 </View>
+                
                 <View style={[styles.iconWrapper]}>
                   <View
-                    style={isIconSelected("Walking") && styles.iconContainer}
+                    style={isIconSelected("Driving") && styles.iconContainer}
                   >
                     <Pressable
                       onPress={() => {
-                        handleIconPress("Walking");
+                        handleIconPress("Driving");
                         Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
                       }}
                     >
                       <MaterialCommunityIcons
-                        name="walk"
-                        size={30}
-                        color="black"
-                      />
-                    </Pressable>
-                  </View>
-                </View>
-                <View style={[styles.iconWrapper]}>
-                  <View
-                    style={isIconSelected("Hiking") && styles.iconContainer}
-                  >
-                    <Pressable
-                      onPress={() => {
-                        handleIconPress("Hiking");
-                        Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-                      }}
-                    >
-                      <MaterialCommunityIcons
-                        name="hiking"
+                        name="car"
                         size={30}
                         color="black"
                       />

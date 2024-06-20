@@ -37,7 +37,7 @@ export default function BatteryOptimizationModal({
             application is unused.
           </Text>
           <Text style={styles.textMargin}>
-            To provide accurate and continuous walking statistics, this app
+            To provide accurate and continuous statistics, this app
             requires battery optimization to be turned off, or put into
             ‘unrestricted’ mode. This will allow location updates to persist for
             the duration of your activity even if the app is not in the

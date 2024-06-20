@@ -1,6 +1,5 @@
 export const activityTypeEnum = {
-  WALKING: "Walking",
-  HIKING: "Hiking",
-  RUNNING: "Running",
+  DRIVING: "Driving",
   CYCLING: "Cycling",
+  
 };
